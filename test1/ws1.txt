@@ -1,0 +1,8 @@
+Question 1: What is the purpose of the log message you supply to your git commit? 
+    for you and other programmers working on the file to understand what the changes were regarding 
+Question 2: What do you think makes a good commit message? 
+    short but descriptive and clear enough for others and yourself to understand 
+Question 3: When and how often should I be committting my work? 
+    after changes and at regaularly intervals to reduce lost work 
+Question 4: True or False, you should commit all files to git? 
+    False, you shouldn't commit log files, binaries or images due to there large size and to avoid overfilling
