@@ -1,5 +1,5 @@
 #include <iostream>
-
+// tricky questions
 bool is_fanarray(int array[], int length){
 
     if (length< 1)
