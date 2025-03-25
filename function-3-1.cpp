@@ -5,7 +5,7 @@ using namespace std;
 int *readNumbers(){
     int* number = new int[4];
     
-    cout << "Enter 4 Numbers:";
+
     for (int i = 0; i < 4; i++)
     {
         cin >> number[i];
