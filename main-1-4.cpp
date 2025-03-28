@@ -3,21 +3,19 @@
 
 using namespace std;
 
-PersonList deepCopyPersonList(PersonList pl);
-
+PersonList shallowCopyPersonList(PersonList pl);
 int main() {
-    // Create an example PersonList
-    PersonList originalList;
+
+    PersonList originalList; 
     originalList.numPeople = 3;
     originalList.people = new Person[originalList.numPeople];
-    
+
     // Initialize the original list
     originalList.people[0] = {"John Doe", 25};
     originalList.people[1] = {"Jane Doe", 28};
     originalList.people[2] = {"Alex Smith", 30};
-    
-    // Create a deep copy of the original PersonList
-    PersonList copiedList = deepCopyPersonList(originalList);
+
+    PersonList copiedList = shallowCopyPersonList(originalList);
 
     // Print the original list
     cout << "Original List:" << endl;
@@ -35,7 +33,9 @@ int main() {
 
     // Deallocate memory
     delete[] originalList.people;
-    delete[] copiedList.people;
+    
 
     return 0;
+
+
 }
