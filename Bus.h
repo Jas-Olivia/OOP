@@ -11,7 +11,7 @@ private:
 
 public:
     Bus();
-    Bus(time_t timeOfEntry, int ID);
+    Bus(int ID);
 
     int getParkingDuration() override;
     // reduce by 25%

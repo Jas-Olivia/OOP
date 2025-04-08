@@ -4,14 +4,14 @@
 using namespace std;
 
 Bus::Bus() {}
-Bus::Bus(time_t timeOfEntry, int ID)
-: Vehicle(timeOfEntry, ID)
+Bus::Bus(int ID)
+: Vehicle(ID)
 {
 
 }
 
 int Bus::getParkingDuration() {
-    timeOfEntry - 0.25;
+    timeOfEntry=timeOfEntry - 4;
     return timeOfEntry;
     
 

@@ -13,7 +13,7 @@ protected:
 public:
     
     Vehicle();
-    Vehicle(time_t timeOfEntry, int ID);
+    Vehicle(int ID);
 
     int getID();
 

@@ -4,8 +4,8 @@
 using namespace std;
 
 Car::Car() {}
-Car::Car(time_t timeOfEntry, int ID)
-: Vehicle(timeOfEntry, ID)
+Car::Car(int ID)
+: Vehicle(ID)
 {
 
 }
