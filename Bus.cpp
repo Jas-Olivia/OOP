@@ -4,8 +4,8 @@
 using namespace std;
 
 Bus::Bus() {}
-Bus::Bus(int ID)
-: Vehicle(ID)
+Bus::Bus(time_t timeOfEntry, int ID)
+: Vehicle(timeOfEntry, ID)
 {
 
 }

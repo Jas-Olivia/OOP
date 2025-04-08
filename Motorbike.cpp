@@ -4,8 +4,8 @@
 using namespace std;
 
 Motorbike::Motorbike() {}
-Motorbike::Motorbike(int ID)
-: Vehicle(ID)
+Motorbike::Motorbike(time_t timeOfEntry, int ID)
+: Vehicle(timeOfEntry, ID)
 {
 
 }

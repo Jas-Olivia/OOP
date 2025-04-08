@@ -11,9 +11,9 @@ private:
 
 public:
     Car ();
-    Car(int ID);
+    Car(time_t timeOfEntry, int ID);
 
-    int getParkingDuration() override ;
+    int getParkingDuration() override;
     //reduce by 10% 
     
     ~Car();
