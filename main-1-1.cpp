@@ -9,7 +9,7 @@
 using namespace std; 
 
 int main() {
-time_t now = time(nullptr);
+
 
 int count = 0;
 

@@ -4,15 +4,16 @@
 using namespace std;
 
 Motorbike::Motorbike() {}
-Motorbike::Motorbike(time_t timeOfEntry, int ID)
-: Vehicle(timeOfEntry, ID)
+Motorbike::Motorbike(int ID)
+: Vehicle(ID)
 {
 
 }
 
 int Motorbike::getParkingDuration() {
-    timeOfEntry=timeOfEntry - 4;
-    return timeOfEntry;
+    time_t now = time(nullptr);
+    int duration = static_cast<int>((now - timeOfEntry) * 0.85); // apply 10% discount
+    return duration;
     
 
 }

@@ -13,12 +13,14 @@ protected:
 public:
     
     Vehicle();
-    Vehicle(time_t timeOfEntry, int ID);
+    Vehicle(int ID);
+
 
     int getID();
 
-    virtual~Vehicle();
+    
     virtual int getParkingDuration() =0;
+    virtual~Vehicle();
 };
 
 
