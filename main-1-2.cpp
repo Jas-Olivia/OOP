@@ -16,8 +16,7 @@ int main () {
 
     for (int i = 0; i < 10; i++)
     {
-        string type = "Null";
-
+        string type;
         cout << "What type of Vehicle?" << endl;
         cin >> type; 
         Vehicle* v = nullptr;
@@ -35,21 +34,21 @@ int main () {
             v= new Motorbike(nextID ++);
         }
         
-    if (!lot.parkVehicle(v)) {
+        if (!lot.parkVehicle(v)) {
         delete v;  // prevent memory leak if not parked
-    }
-    }
+        }
+        }
     
-    int idToUnpark;
-    cout << "\nEnter the ID of the vehicle to unpark: ";
-    cin >> idToUnpark;
+        int idToUnpark;
+        cout << "\nEnter the ID of the vehicle to unpark: ";
+        cin >> idToUnpark;
 
-    if (!lot.unparkVehicle(idToUnpark)) {
-        cout << "Unable to unpark vehicle. It was not found.\n";
-    } else {
-        cout << "Vehicle with ID " << idToUnpark << " has been removed from the lot.\n";
-    }
+        if (!lot.unparkVehicle(idToUnpark)) {
+            cout << "Unable to unpark vehicle. It was not found.\n";
+        } else {
+            cout << "Vehicle with ID " << idToUnpark << " has been removed from the lot.\n";
+        }
 
-    return 0;
+        return 0;
 
 }

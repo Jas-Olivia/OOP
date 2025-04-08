@@ -2,12 +2,15 @@
 #include <iostream>
 
 ParkingLot::ParkingLot() {
+    maxCars = 10;
+    count = 0;
     Vehicles = new Vehicle*[maxCars];
 }
 
 ParkingLot::ParkingLot(int maxCars)
 {
     this->maxCars=maxCars;
+    count = 0;
     Vehicles = new Vehicle*[maxCars];
 }
 
@@ -29,7 +32,7 @@ bool ParkingLot::parkVehicle(Vehicle* v) {
 bool ParkingLot::unparkVehicle(int ID) {
     for (int i = 0; i < count; ++i) {
         if (Vehicles[i]->getID() == ID) {
-            std::cout << "Unparking vehicle with ID " << ID << ".\n";
+            cout << "Unparking vehicle with ID " << ID << ".\n";
             delete Vehicles[i];
             for (int j = i; j < count - 1; ++j) {
                 Vehicles[j] = Vehicles[j + 1];
