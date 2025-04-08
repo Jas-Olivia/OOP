@@ -11,7 +11,7 @@ Car::Car(time_t timeOfEntry, int ID)
 }
 
 int Car::getParkingDuration() {
-    timeOfEntry - 0.1;
+    timeOfEntry=timeOfEntry - 4;
     return timeOfEntry;
     
 

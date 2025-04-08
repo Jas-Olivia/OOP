@@ -11,7 +11,7 @@ private:
 
 public:
     Motorbike();
-    Motorbike(int ID);
+    Motorbike(time_t timeOfEntry,int ID);
 
     int getParkingDuration() override;
     // reduce by 15%
