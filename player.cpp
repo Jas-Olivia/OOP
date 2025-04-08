@@ -4,8 +4,7 @@
 using namespace std;
 
 
-
-player::player(string name, int health, int damage){
+Player::Player(string name, int health, int damage){
     this->name = name;
     this->health = health;
     this->damage = damage;
@@ -14,13 +13,13 @@ player::player(string name, int health, int damage){
 }
 
 
-void player::attack(player* opponent, int damage){
-    cout <<name<< " is attacking" << opponent->getName(name)<< " for "<< damage << " damage."<<endl;
+void Player::attack(Player* opponent, int damage){
+    cout <<name<< " is attacking" << opponent->getName()<< " for "<< damage << " damage."<<endl;
     opponent->takeDamage(damage);
 
 }
 
-void player::takeDamage(int damage){
+void Player::takeDamage(int damage){
     health -= damage;
 
     cout << name << "Takes " << damage << "damage." << endl; 
@@ -28,25 +27,25 @@ void player::takeDamage(int damage){
 
 }
 
-string player::getName(string name) {
+string Player::getName() {
     return name;
 }
-void player::setName(string n) {
+void Player::setName(string n) {
      name = n;
 }
 
-int player::getHealth(int health) {
+int Player::getHealth() {
     return health;
 }
 
-void player::setHealth(int h) {
+void Player::setHealth(int h) {
     health = h;
 }
 
-int player::getDamage(int damage) {
+int Player::getDamage() {
     return damage;
 }
 
-void player::setDamage (int d) {
+void Player::setDamage (int d) {
     damage = d;
 }

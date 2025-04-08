@@ -7,7 +7,7 @@ using namespace std;
 
 
 
-class player
+class Player
 {
 protected:
     string name;
@@ -15,15 +15,15 @@ protected:
     int damage;
 
 public:
-    player();
-    player(string name, int health, int damage);
-    void attack(player* opponent, int damage);
+    Player();
+    Player(string name, int health, int damage);
+    void attack(Player* opponent, int damage);
     void takeDamage(int damage);
-    string getName(string name);
+    string getName();
     void setName(string name);
-    int getHealth(int health);
+    int getHealth();
     void setHealth(int health);
-    int getDamage(int damage);
+    int getDamage();
     void setDamage(int damage);
 };
 

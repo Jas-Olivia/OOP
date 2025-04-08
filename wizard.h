@@ -4,14 +4,14 @@
 #include <string>
 using namespace std;
 
-class Wizard : public player
+class Wizard : public Player
 {
 private:
     int mana;
 public:
-    Wizard(int mana, string name, int health, int damage);
-    void castSpell (player* opponent);
-    int getMana(int mana);
+    Wizard(string name, int health, int damage, int mana);
+    void castSpell (Player* opponent);
+    int getMana();
     void setMana(int mana);
  
 };
