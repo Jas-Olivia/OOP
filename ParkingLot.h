@@ -16,6 +16,7 @@ public:
 
     bool parkVehicle (Vehicle* v);
     bool unparkVehicle(int ID);
+    int countOverstayingVehicles(int maxParkingDuration);
 
     ~ParkingLot();
 };
