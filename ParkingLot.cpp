@@ -24,7 +24,7 @@ bool ParkingLot::parkVehicle(Vehicle* v) {
         Vehicles[count++] =v;
         return true;
     }
-    cout << "The parking lot is full!" <<endl;
+    cout << "The lot is full" <<endl;
 
     return false;
     
@@ -32,8 +32,7 @@ bool ParkingLot::parkVehicle(Vehicle* v) {
 bool ParkingLot::unparkVehicle(int ID) {
     for (int i = 0; i < count; ++i) {
         if (Vehicles[i]->getID() == ID) {
-            cout << "Unparking vehicle with ID " << ID << ".\n";
-            delete Vehicles[i];
+           delete Vehicles[i];
             for (int j = i; j < count - 1; ++j) {
                 Vehicles[j] = Vehicles[j + 1];
             }
