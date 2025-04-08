@@ -15,6 +15,7 @@ void Wizard::castSpell(Player* opponent) {
     << " for" << getDamage() << " damage." << endl;
 
     opponent->takeDamage(getDamage());
+    mana -= 10;
 
 }  
 
