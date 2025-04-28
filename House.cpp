@@ -1,7 +1,17 @@
 #include "House.h" 
 
+
+House::House(): appliances(nullptr), numAppliances(0) {
+    
+}
+
 House::House(int numAppliances) : appliances(nullptr), numAppliances(numAppliances) {
   
+    if (numAppliances > 0)
+    {
+        appliances = new Appliance*[numAppliances];
+    }
+    
 }
 
 bool House::addAppliance(Appliance* appliance) {
@@ -15,7 +25,7 @@ bool House::addAppliance(Appliance* appliance) {
     
     newAppliances[numAppliances] = appliance;
 
-    delete [] appliances;
+    delete[] appliances;
     appliances = newAppliances;
     ++numAppliances;
 
