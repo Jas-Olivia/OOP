@@ -10,12 +10,12 @@ TV::TV(int powerRating, double screenSize) {
 }
 
 //setters
-void TV::set_screenSize(double screenSize) {
+void TV::setScreenSize(double screenSize) {
     this->screenSize = screenSize;
 }
 
 //gettters
-double TV::get_screenSize() const {
+double TV::getScreenSize() const {
     return screenSize;
 }
 
