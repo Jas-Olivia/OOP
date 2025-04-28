@@ -5,7 +5,7 @@ TV::TV() {
     screenSize = 0;
 }
 
-TV::TV(int powerRating, double screenSize) {
+TV::TV(int powerRating, double screenSize) : Appliance(powerRating) {
     this->screenSize = screenSize;
 }
 
@@ -20,7 +20,8 @@ double TV::getScreenSize() const {
 }
 
 double TV::getPowerConsumption() const {
-    return get_powerRating() * (screenSize/10);
+    double powerConsumption = get_powerRating() *  (screenSize/10);
+    return powerConsumption;
 
 }
     TV::~TV(){
